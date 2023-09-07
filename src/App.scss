@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    margin: 0;
+    padding: 0;
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        padding:0 30px;
+        .sign-out{
+            border: none;
+            background-color: #fff;
+          }
+          .sign-in{
+            border: none;
+            background-color: #fff;
+          }
+    }
+    .chat-box{
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(62, 240, 219, 0.173), rgba(255, 0, 217, 0.079));
+        .messages-wrapper{
+            width: 80%;
+            margin: 0 auto;
+            .chat-bubble{
+                display: flex;
+                padding: 10px;
+                gap: 8px;
+                max-width: 90%;
+                width: auto;
+                clear: both;
+                .chat-bubble__left{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10px;
+                }
+                .chat-bubble__right{
+                    background-color: #f1f1f1;
+                    // border: red;
+                    padding:0px 12px ;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    .user-message{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .right{
+                float: right;
+                clear: both;
+                flex-direction: row-reverse;
+                .chat-bubble__right{
+                    background-color: #0070c0; 
+                    .user-message{
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+        .send-message{
+            width: 90%;
+            margin: 0 auto;
+            /* border: 1px solid blue; */
+            height: 30px;
+            padding: 10px;
+            border-top:1px solid blue ;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+            .form-input__input{
+                background-color: #fff;
+                border-radius: 25px;
+                width: 95%;
+                height: 15px;
+                .telegram_send{
+                    cursor: pointer;
+                }
+                
+            }
+        } 
+    }
+}

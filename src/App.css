@@ -27,9 +27,7 @@
 
 .messages-wrapper{
   width: 80%;
-  /* border-radius: 10px; */
   margin: 0 auto;
-  /* border: 1px solid green; */
 }
 
 .send-message{
@@ -47,13 +45,12 @@
 
 .form-input__input{
   width: 90%;
+  /* height: 30px; */
   
 }
 
 .chat-bubble{
-  /* border: 1px solid; */
   display: flex;
-  /* border-radius: 10px; */
   padding: 10px;
   gap: 8px;
   max-width: 90%;
@@ -62,8 +59,6 @@
 }
 
 .right{
-  
-  /* width: 100%; */
   float: right;
   clear: both;
   flex-direction: row-reverse;
@@ -96,5 +91,8 @@
 .chat-bubble__right .user-message{
   font-size: 14px;
   font-weight: 400;
-  /* line-height: 21px; */
+}
+
+.telegram_send{
+  cursor: pointer;
 }
