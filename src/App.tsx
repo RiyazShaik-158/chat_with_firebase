@@ -1,4 +1,3 @@
-// import './App.css';
 import './App.scss';
 import { auth } from "./components/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
